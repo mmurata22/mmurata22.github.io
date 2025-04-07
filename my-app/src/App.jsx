@@ -3,6 +3,7 @@ import Fukushima from './pages/Fukushima'
 import NHI from './pages/NHI'
 import RIVR from './pages/RIVR'
 import SSI from './pages/SSI'
+import SocialLinks from './components/SocialLinks';
 import './App.css'
 
 function App() {
@@ -14,10 +15,10 @@ function App() {
             <>
               <header>
                 <h1>Michele D. Murata</h1>
-                <p>Software Engineering Student @ Lehigh U</p>
+                <p>Computer Science Student @ Lehigh University</p>
               </header>
 
-              <section id="about">
+              <section id="about" className="section section-1">
                 <h2>About Me</h2>
                 <p>
                   Hi! I'm Michele Murata, currently enrolled at Lehigh University majoring in Computer Science and minoring in Graphic Design. I have a
@@ -25,7 +26,7 @@ function App() {
                 </p>
               </section>
 
-              <section id="projects">
+              <section id="projects" className="section section-2">
                 <h2>Experience</h2>
                 <Link to="/projects/rivr" className="project-card">
                   <h3>Research in Immersive Virtual Reality</h3>
@@ -55,11 +56,9 @@ function App() {
                 </Link>
               </section>
 
-              <section id="contact">
+              <section id="contact" className="section section-3">
                 <h2>Contact</h2>
-                <p><a href="mailto:michele.h.murata@mail.com">Email</a></p>
-                <p><a href="https://github.com/mmurata22">GitHub</a></p>
-                <p><a href="https://www.linkedin.com/in/michele-de-guzman-murata-685839228/">LinkedIn</a></p>
+                <SocialLinks />
               </section>
 
               <footer>
