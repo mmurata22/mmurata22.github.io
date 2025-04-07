@@ -13,7 +13,9 @@ const Fukushima = () => {
 
         <div className="project-card">
             <p>
+              Image processing laboratory.
             </p>
+          <a href="https://fukushima.web.nitech.ac.jp/en/">View the Site</a>
         </div>
       </section>
     </div>

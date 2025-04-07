@@ -35,7 +35,7 @@ function App() {
                   <p>- Managed lab's website using Drupal (PHP).</p>
                 </Link>
                 <Link to="/projects/nhi" className="project-card">
-                  <h3>NanoHuman Interfaces Lab</h3>
+                  <h3>Nano | Human Interfaces Lab</h3>
                   <p>- Scanned and optimized real life objects into VR compatible models for an art exhibition, utilizing Blender and Unity, to be ported onto HTC ViVE.</p>
                   <p>- Worked on a replica FIB Microscope model for educational purposes, utilizing Unity and C#, to be ported onto HoloLens.</p>
                   <p>- Made AR experiences using Adobe Aero, modeling and necessary assets in Blender. These AR experiences can be seen on any phone.</p>
@@ -57,6 +57,10 @@ function App() {
               </section>
 
               <section id="contact" className="section section-3">
+                <h2>Personal Projects</h2>
+              </section>
+
+              <section id="contact" className="section section-4">
                 <h2>Contact</h2>
                 <SocialLinks />
               </section>
