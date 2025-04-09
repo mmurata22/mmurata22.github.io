@@ -56,17 +56,13 @@ function App() {
                 </Link>
               </section>
 
-              <section id="contact" className="section section-3">
-                <h2>Personal Projects</h2>
-              </section>
-
               <section id="contact" className="section section-4">
                 <h2>Contact</h2>
                 <SocialLinks />
               </section>
 
               <footer>
-                <p></p>
+                <p><a href="https://mmurata22.github.io/portfolio-desktop/">pssst. click me. </a></p>
               </footer>
             </>
           } />
