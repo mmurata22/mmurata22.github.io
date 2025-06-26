@@ -61,9 +61,9 @@ function App() {
                 <SocialLinks />
               </section>
 
-              <footer>
+              {/*<footer>
                 <p><a href="https://mmurata22.github.io/portfolio-desktop/">pssst. click me. </a></p>
-              </footer>
+              </footer>*/}
             </>
           } />
 
