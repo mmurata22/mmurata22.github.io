@@ -27,7 +27,7 @@ function App() {
               </section>
 
               <section id="projects" className="section section-2">
-                <h2>Experience</h2>
+                <h2>Technical Experience</h2>
                 <Link to="/projects/rivr" className="project-card">
                   <h3>Research in Immersive Virtual Reality</h3>
                   <p>- Worked with Oculus (Quest 1-3) and Unity to create VR experiences for educational outreach regarding environmental studies (C#).</p>
