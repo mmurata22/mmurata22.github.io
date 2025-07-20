@@ -1,10 +1,10 @@
 /* General Styles */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
 body {
   font-family: Arial, sans-serif;
   background-color: #f9f9f9;
@@ -92,7 +92,6 @@ a {
   border-radius: 8px;
 }
 
-
 .project-card {
   width: 100%;
   max-width: 800px;
@@ -100,4 +99,47 @@ a {
   padding: 20px;
   text-align: center;
   overflow: hidden;
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  display: block;
+}
+
+.project-card.special {
+  border: 2px solid #0077cc;
+  box-shadow: 0 0 10px rgba(0, 119, 204, 0.1);
+}
+
+.tech-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0.5rem 0;
+}
+
+.tech-list li {
+  margin-bottom: 6px;
+  line-height: 1.5;
+}
+
+.subtitle {
+  font-weight: bold;
+  font-style: italic;
+  color: #0077cc;
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.text-link {
+  color: #007BFF;
+  text-decoration: underline;
+}
+
+.text-link:hover {
+  text-decoration: none;
 }

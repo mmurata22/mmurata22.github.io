@@ -3,6 +3,7 @@ import Fukushima from './pages/Fukushima'
 import NHI from './pages/NHI'
 import RIVR from './pages/RIVR'
 import SSI from './pages/SSI'
+import Sera from './pages/Sera'
 import SocialLinks from './components/SocialLinks';
 import './App.css'
 
@@ -28,6 +29,12 @@ function App() {
 
               <section id="projects" className="section section-2">
                 <h2>Technical Experience</h2>
+                <Link to="/projects/sera" className="project-card">
+                  <h3>Sera.io</h3>
+                  <p>- Developed and maintained responsive front-end features using React, TypeScript, Tailwind CSS, and Node.js, contributing to a smart budgeting platform that analyzes financial history to automate debt reduction.</p>
+                  <p>- Implemented mobile-first UI components and integrated third-party libraries (Recharts, Sonner) to support interactive tours, data visualization (e.g. pie charts), and real-time toast notifications.</p>
+                  <p>- Delivered key product features including onboarding flows, influencer analytics dashboards, and landing page redesigns, while resolving UI/UX bugs to improve application performance and usability.</p>
+                </Link>
                 <Link to="/projects/rivr" className="project-card">
                   <h3>Research in Immersive Virtual Reality</h3>
                   <p>- Worked with Oculus (Quest 1-3) and Unity to create VR experiences for educational outreach regarding environmental studies (C#).</p>
@@ -56,6 +63,21 @@ function App() {
                 </Link>
               </section>
 
+              <section id="personal-projects" className="section section-3">
+                <h2>Personal Projects</h2>
+                <div className="project-card">
+                  <h3>Real-Time Face Detection</h3>
+                  <p>- Created a Python-based face detection app using OpenCV and Haar Cascades to detect and draw bounding boxes around faces in real time via webcam.</p>
+                  <a href="https://github.com/mmurata22/face_detection" className="text-link" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+                </div>
+                <div className="project-card">
+                  <h3>Portfolio Website</h3>
+                  <p>- Built and deployed this portfolio site using React, React Router, and custom CSS to showcase my work and experiences in a clean, responsive layout.</p>
+                  <p>- Integrated project-specific routes and made the design mobile-friendly using semantic HTML and Tailwind-inspired layout patterns.</p>
+                  <a href="https://mmurata22.github.io/" className="text-link" target="_blank" rel="noopener noreferrer">View Live</a>
+                </div>
+            </section>
+
               <section id="contact" className="section section-4">
                 <h2>Contact</h2>
                 <SocialLinks />
@@ -67,6 +89,7 @@ function App() {
             </>
           } />
 
+          <Route path="/projects/sera" element={<Sera />} />
           <Route path="/projects/fukushima" element={<Fukushima />} />
           <Route path="/projects/nhi" element={<NHI />} />
           <Route path="/projects/rivr" element={<RIVR />} />
