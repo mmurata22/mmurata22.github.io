@@ -66,11 +66,6 @@ function App() {
               <section id="personal-projects" className="section section-3">
                 <h2>Personal Projects</h2>
                 <div className="project-card">
-                  <h3>Real-Time Face Detection</h3>
-                  <p>- Created a Python-based face detection app using OpenCV and Haar Cascades to detect and draw bounding boxes around faces in real time via webcam.</p>
-                  <a href="https://github.com/mmurata22/face_detection" className="text-link" target="_blank" rel="noopener noreferrer">View on GitHub</a>
-                </div>
-                <div className="project-card">
                   <h3>Portfolio Website</h3>
                   <p>- Built and deployed this portfolio site using React, React Router, and custom CSS to showcase my work and experiences in a clean, responsive layout.</p>
                   <p>- Integrated project-specific routes and made the design mobile-friendly using semantic HTML and Tailwind-inspired layout patterns.</p>
