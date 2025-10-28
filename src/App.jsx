@@ -64,7 +64,26 @@ function App() {
               </section>
 
               <section id="personal-projects" className="section section-3">
-                <h2>Personal Projects</h2>
+                <h2>Projects</h2>
+                <div className="project-card">
+                  <h3>RecycleVision</h3>
+                  <p>- Package identifier made with OpenCV, Python, and Flask (backend) to identify a product's package and give the user guidance
+                    on recycling depending on the product.
+                  </p>
+                  <p>- Uses React frontend to display data.</p>
+                  <p>- Hosts backend on Render, and frontend on Vercel.</p>
+                  {/*<a href="https://mmurata22.github.io/" className="text-link" target="_blank" rel="noopener noreferrer">View Live</a>*/}
+                </div>
+                <div className="project-card">
+                  <h3>uniSource</h3>
+                  <p>- Collaborated with a team of 10 to create a webapp collecting University's various resources to create "One Source of Truth",
+                    integrating a smoother user experience for students during course planning and registration.
+                  </p>
+                  <p>- Used Jinja templating to create html fragments to display on an iFrame, utilizing a postgres database to fetch
+                    and dipslay data.
+                  </p>
+                  {/*<a href="https://mmurata22.github.io/" className="text-link" target="_blank" rel="noopener noreferrer">View Live</a>*/}
+                </div>
                 <div className="project-card">
                   <h3>Portfolio Website</h3>
                   <p>- Built and deployed this portfolio site using React, React Router, and custom CSS to showcase my work and experiences in a clean, responsive layout.</p>
