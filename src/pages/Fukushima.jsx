@@ -32,6 +32,7 @@ const Fukushima = () => {
 
         <div className="project-card">
           <p className="subtitle">Contributions:</p>
+          <a  />
           <p>Made a copy of Gaussian Fourier Pyramid for Local Laplacian Pyramid from C++ to MATLAB.</p>
           <a href="https://norishigefukushima.github.io/GaussianFourierPyramid/">View the Project</a>
         </div>
