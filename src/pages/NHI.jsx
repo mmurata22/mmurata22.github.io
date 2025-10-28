@@ -55,6 +55,13 @@ const nhi = () => {
           </ul>
         </div>
 
+        <div className="project-card special">
+          <p className="subtitle">🏅 Award-Winning Outreach</p>
+          <p>
+            ASM Outreach Award 2025
+          </p>
+        </div>
+
         <div className="project-card">
           <p className="subtitle">Outreach:</p>
           <img src={Outreach} alt="NHI Outreach" className="project-image" />
