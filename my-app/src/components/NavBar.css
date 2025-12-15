@@ -1,0 +1,128 @@
+/* src/components/Navbar.css */
+
+.stripe-nav {
+  /* Forces the nav to sit ON TOP of your fluid header */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  
+  /* High Z-Index ensures it floats above the canvas */
+  z-index: 100; 
+  
+  padding: 20px 0;
+  background: transparent; /* Totally clear background */
+  font-family: sans-serif; /* Or use your custom font */
+  transition: none;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  /* Keeps the nav content aligned with your page center */
+  max-width: 1080px; 
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* --- LOGO --- */
+.nav-logo a {
+  font-weight: 800;
+  font-size: 1.5rem;
+  color: white;
+  text-decoration: none;
+  letter-spacing: -1px; /* Tighter tracking looks more modern */
+}
+
+/* --- LINKS --- */
+.nav-links {
+  display: flex;
+  gap: 32px; /* Breathing room between links */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+.nav-links a {
+  color: rgba(255, 255, 255, 0.85); /* slightly see-through white */
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+/* Hover Effect: Bright white + subtle lift */
+.nav-links a:hover {
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
+/* --- "PILL" BUTTON (Glass Effect) --- */
+.nav-links .contact-btn {
+  background: rgba(255, 255, 255, 0.15); /* Glassy background */
+  padding: 10px 20px;
+  border-radius: 50px; /* Makes it a pill shape */
+  backdrop-filter: blur(8px); /* Blurs the gradient BEHIND the button */
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.nav-links .contact-btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: translateY(-1px);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.logo-image {
+  /* Reduced from 50px to 40px */
+  height: 40px; 
+  
+  width: auto; 
+  max-width: 100%;
+  transition: height 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .logo-image {
+    /* Reduced from 40px to 32px for mobile */
+    height: 32px; 
+  }
+}
+
+/* src/components/Navbar.css */
+
+/* --- EXISTING STYLES (Keep these for Homepage) --- */
+.stripe-nav {
+  position: absolute; /* Floating on top */
+  /* ... existing styles ... */
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* --- NEW: SOLID NAVBAR (For other pages) --- */
+.nav-solid {
+  position: relative; /* Sit in the flow, don't float over content */
+  background: #ffffff; /* White background */
+  border-bottom: 1px solid #eaeaea; /* Subtle divider */
+}
+
+/* Change Link Colors to Black on solid pages */
+.nav-solid .nav-links a {
+  color: #1a1a1a; /* Dark gray/black text */
+}
+
+.nav-solid .nav-links a:hover {
+  color: #000000; /* Pure black on hover */
+}
+
+/* Change Button to dark outline on solid pages */
+.nav-solid .nav-links .contact-btn {
+  background: transparent;
+  color: #1a1a1a;
+  border: 1px solid #1a1a1a;
+}
+
+.nav-solid .nav-links .contact-btn:hover {
+  background: #1a1a1a;
+  color: #ffffff;
+}
