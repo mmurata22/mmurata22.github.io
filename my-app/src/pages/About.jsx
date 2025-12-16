@@ -1,20 +1,18 @@
 // src/pages/About.jsx
 import React from 'react';
-import { Link } from 'react-router-dom';
-
-// --- ASSETS ---
-// Import the new graduation photo
-// Make sure the file 'graduation photo.JPEG' is in your src/assets folder
-import profilePic from '../assets/graduation photo.JPG'; 
+import profilePic from '../assets/michele.jpg'; 
 
 const About = () => {
   return (
     <div className="container page-content">
       
-      {/* --- 1. HERO SECTION (Split Layout) --- */}
-      <div className="image-grid-2" style={{ alignItems: 'center', marginBottom: '4rem' }}>
+      {/* --- 1. HERO SECTION (Animation Delay: 0.1s) --- */}
+      <div 
+        className="image-grid-2 section section-1" 
+        style={{ alignItems: 'center', marginBottom: '4rem' }}
+      >
         
-        {/* Left Col: The Intro */}
+        {/* Left Col: Text */}
         <div>
           <h1 className="page-title" style={{ marginBottom: '0.5rem' }}>
             Hi, I'm Michele.
@@ -30,20 +28,37 @@ const About = () => {
           </p>
         </div>
 
-        {/* Right Col: The Photo */}
+        {/* Right Col: Photo & Caption */}
         <div className="img-container">
-          {/* Since we are now importing the photo, we don't need the placeholder check. */}
           <img 
             src={profilePic} 
-            alt="Michele De Guzman Murata - Graduation" 
-            // Added objectFit: 'cover' to ensure the image fills the space nicely
-            style={{ width: '100%', borderRadius: '12px', boxShadow: '0 8px 24px rgba(0,0,0,0.1)', objectFit: 'cover' }} 
+            alt="Michele featured on the NASDAQ Tower" 
+            style={{ 
+              width: '100%', 
+              borderRadius: '12px', 
+              boxShadow: '0 8px 24px rgba(0,0,0,0.15)', 
+              objectFit: 'cover' 
+            }} 
           />
+          {/* The Caption */}
+          <p style={{ 
+            textAlign: 'center', 
+            fontSize: '0.9rem', 
+            color: '#777', 
+            marginTop: '10px', 
+            fontStyle: 'italic',
+            fontFamily: 'Hepta Slab, serif'
+          }}>
+            Featured on the NASDAQ Tower in Times Square during my internship at Sera.
+          </p>
         </div>
       </div>
 
-      {/* --- 2. THE "SPECS" (Education & Contact) --- */}
-      <div className="project-specs" style={{ borderTop: '1px solid #eee', paddingTop: '2rem' }}>
+      {/* --- 2. SPECS (Animation Delay: 0.3s) --- */}
+      <div 
+        className="project-specs section section-2" 
+        style={{ borderTop: '1px solid #eee', paddingTop: '2rem' }}
+      >
         <div className="spec-item">
           <h4>Education</h4>
           <p>Lehigh University</p>
@@ -60,21 +75,19 @@ const About = () => {
         <div className="spec-item">
           <h4>Connect</h4>
           <p>
-            <a href="mailto:your.email@lehigh.edu">Email Me</a>
+            <a href="mailto:your.email@lehigh.edu" style={{ color: '#3a60ff', fontWeight: 'bold' }}>Email Me</a>
           </p>
         </div>
       </div>
 
-      {/* --- 3. SKILLS & TOOLS --- */}
-      <section className="cs-section">
+      {/* --- 3. SKILLS (Animation Delay: 0.5s) --- */}
+      <section className="cs-section section section-3">
         <h2>Technical Toolkit</h2>
         <p>
           My work spans the gap between creative design and hard engineering. Here are the tools I use to bridge that divide:
         </p>
 
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '2rem', marginTop: '2rem' }}>
-          
-          {/* Column 1 */}
           <div>
             <h4 style={{ borderBottom: '2px solid #333', paddingBottom: '0.5rem', marginBottom: '1rem' }}>Development</h4>
             <ul style={{ paddingLeft: '1.2rem', lineHeight: '1.8', color: '#555' }}>
@@ -86,7 +99,6 @@ const About = () => {
             </ul>
           </div>
 
-          {/* Column 2 */}
           <div>
             <h4 style={{ borderBottom: '2px solid #333', paddingBottom: '0.5rem', marginBottom: '1rem' }}>Design & 3D</h4>
             <ul style={{ paddingLeft: '1.2rem', lineHeight: '1.8', color: '#555' }}>
@@ -97,7 +109,6 @@ const About = () => {
             </ul>
           </div>
 
-           {/* Column 3 */}
            <div>
             <h4 style={{ borderBottom: '2px solid #333', paddingBottom: '0.5rem', marginBottom: '1rem' }}>Research</h4>
             <ul style={{ paddingLeft: '1.2rem', lineHeight: '1.8', color: '#555' }}>
@@ -107,12 +118,15 @@ const About = () => {
               <li>Agile / Scrum</li>
             </ul>
           </div>
-
         </div>
       </section>
 
-      {/* --- 4. PERSONAL / FUN SECTION --- */}
-      <section className="cs-section">
+      {/* --- 4. FUN SECTION (Animation Delay: 0.7s) --- */}
+      {/* Manually added style for delay since .section-4 might not exist in CSS */}
+      <section 
+        className="cs-section section" 
+        style={{ animationDelay: '0.7s' }}
+      >
         <h2>Beyond the Screen</h2>
         <p>
           When I'm not coding, I'm usually exploring the physical side of creativity. 

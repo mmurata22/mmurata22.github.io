@@ -1,8 +1,6 @@
-// src/pages/SSI.jsx
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-// --- IMPORT YOUR ASSETS HERE ---
 // Images
 import grayWhiteUI from '../assets/GrayWhiteUI.png';
 import grayWhiteUIBlue from '../assets/GrayWhiteUI Blue.png';
@@ -53,7 +51,7 @@ const SSI = () => {
         </div>
       </div>
 
-      {/* --- 3. FULL SCOPE SECTION (ADDED) --- */}
+      {/* --- 3. FULL SCOPE SECTION --- */}
       <div className="scope-section" style={{ marginBottom: '4rem', padding: '2rem', background: '#fff', border: '1px solid #eee', borderRadius: '12px', boxShadow: '0 4px 12px rgba(0,0,0,0.03)' }}>
         <h3 style={{ marginTop: 0, fontFamily: 'Mukta, sans-serif' }}>Full Scope of Responsibilities</h3>
         <p style={{ marginBottom: '1.5rem' }}>

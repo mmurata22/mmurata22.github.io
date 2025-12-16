@@ -35,7 +35,8 @@ const Work = () => {
       <div className="section">
         <h1 className="page-title" style={{ marginBottom: '1rem' }}>Selected Work</h1>
         <p className="lead-text" style={{ maxWidth: '600px', marginBottom: '3rem' }}>
-          A collection of software engineering, academic research, and VR design projects.
+          A collection of software engineering, academic research, and VR design projects, with some examples of 
+          progress and development, case studies, and live work.
         </p>
 
         {/* --- 1. INDUSTRY EXPERIENCE --- */}
@@ -44,8 +45,6 @@ const Work = () => {
           
           <Link to="/projects/sera" className="wide-card">
             <div className="wide-card-image">
-              {/* UPDATED: 'contain' ensures the whole logo fits. 
-                 'padding' gives it some breathing room. */}
               <img 
                 src={seraLogo} 
                 alt="Sera.io Logo" 
