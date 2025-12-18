@@ -1,0 +1,158 @@
+/* --- CASE STUDY HERO --- */
+.case-study-hero {
+  margin-bottom: 3rem;
+  max-width: 100%;
+  text-align: center;
+}
+
+.client-name {
+  font-family: 'Mukta', sans-serif; /* Ensure you have this font imported in index.html/App.css */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+  color: #666;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.page-title {
+  font-size: 2.5rem; /* Slightly larger for impact */
+  margin: 0.5rem 0;
+  color: #222;
+}
+
+.lead-text {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: #444;
+  margin-top: 1rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* --- SPECS GRID --- */
+.project-specs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #eee;
+}
+
+.spec-item h4 {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  color: #888;
+  margin-bottom: 0.5rem;
+  margin-top: 0;
+}
+
+.spec-item p {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0;
+  font-family: 'Mukta', sans-serif;
+  color: #333;
+}
+
+/* --- CONTENT SECTIONS --- */
+.cs-section {
+  margin-bottom: 4rem;
+}
+
+.cs-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #222;
+  text-align: center;
+}
+
+.cs-section p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #444;
+  margin-bottom: 1.5rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto; /* Centers the paragraph text block */
+}
+
+/* --- IMAGE & VIDEO GRIDS --- */
+.image-grid-2,
+.image-grid-3,
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+/* Specific styling for single full-width images */
+.image-full {
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.img-container img, 
+.image-full img,
+video {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  display: block;
+}
+
+.caption {
+  font-size: 0.9rem;
+  color: #777;
+  text-align: center;
+  margin-top: 0.8rem;
+  font-style: italic;
+}
+
+/* --- BOTTOM NAV --- */
+.case-study-footer {
+  margin-top: 5rem;
+  padding-top: 2rem;
+  border-top: 1px solid #eee;
+  text-align: center; /* Center the back link */
+}
+
+.back-link {
+  font-weight: 700;
+  font-family: 'Mukta', sans-serif;
+  font-size: 1.1rem;
+  text-decoration: none;
+  color: #333;
+  transition: color 0.2s ease;
+}
+
+.back-link:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+/* --- PLACEHOLDERS (Specific to Sera.jsx) --- */
+/* These styles handle the gray boxes until you add real images */
+
+.img-container.placeholder,
+.image-full.placeholder {
+  background-color: #f4f4f4;
+  border: 2px dashed #ccc;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #888;
+  font-weight: 500;
+  text-align: center;
+  padding: 2rem;
+}
+
+/* Height helpers for placeholders */
+.h-300 { min-height: 300px; }
+.h-400 { min-height: 400px; }

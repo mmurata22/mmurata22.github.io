@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './SSI.css';
 
 // Images
 import grayWhiteUI from '../assets/GrayWhiteUI.png';
@@ -21,7 +22,7 @@ const SSI = () => {
         <p style={{ margin: 0, fontSize: '0.9rem', color: '#555' }}>
           <strong>Note:</strong> This project is part of ongoing academic research. Due to confidentiality protocols, 
           a significant portion of the work (backend logic, research data, and complex environments) has been excluded. 
-          The case study below focuses specifically on the <strong>Onboarding UI System</strong>.
+          The case study below focuses specifically on the Onboarding UI System.
         </p>
       </div>
 
@@ -31,7 +32,7 @@ const SSI = () => {
         <h1 className="page-title">Stereotyping Social Interactions (VR)</h1>
         <p className="lead-text">
           A VR simulation designed to study social psychology. While my role covered full-stack VR development,
-          this case study focuses on the <strong>Instructional UI System</strong> designed to guide non-gamers through the experience.
+          this case study focuses on the Instructional UI System designed to guide non-gamers through the experience.
         </p>
       </header>
 
@@ -70,7 +71,7 @@ const SSI = () => {
         <section className="cs-section">
           <h2>Feature Focus: The Onboarding UI</h2>
           <p>
-            The core challenge was <strong>onboarding non-gamers</strong>. In a psychology study, if a participant struggles 
+            The core challenge was onboarding non-gamers. In a psychology study, if a participant struggles 
             to figure out which button to press, they get frustrated, and that frustration skews the data.
           </p>
           <p>
@@ -120,7 +121,7 @@ const SSI = () => {
         <section className="cs-section">
           <h2>The Final Design</h2>
           <p>
-            We selected the <strong>Monochrome System</strong> to minimize emotional bias. 
+            We selected the Monochrome System to minimize emotional bias. 
             This design uses clean line-art that mirrors the physical controller, strictly mapping the 
             digital prompt to the user's real-world hand position.
           </p>

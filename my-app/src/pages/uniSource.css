@@ -1,0 +1,121 @@
+/* --- CASE STUDY HERO --- */
+.case-study-hero {
+  margin-bottom: 3rem;
+  max-width: 100%;
+  text-align: center; /* NEW: Centers the Title, Subtitle, and Intro */
+}
+
+.client-name {
+  font-family: 'Mukta', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+  color: #666;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.lead-text {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: #444;
+  margin-top: 1rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* --- SPECS GRID --- */
+.project-specs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #eee;
+}
+
+.spec-item h4 {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  color: #888;
+  margin-bottom: 0.5rem;
+}
+
+.spec-item p {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0;
+  font-family: 'Mukta', sans-serif;
+}
+
+/* --- CONTENT SECTIONS --- */
+.cs-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #222;
+  text-align: center;
+}
+
+.cs-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #222;
+}
+
+.cs-section p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #444;
+  margin-bottom: 1.5rem;
+}
+
+/* --- IMAGE & VIDEO GRIDS (The Responsive Fix) --- */
+.image-grid-2,
+.image-grid-3,
+.video-grid {
+  display: grid;
+  /* This 'auto-fit' makes it stack on mobile and side-by-side on desktop */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.img-container img, 
+.image-full img,
+video {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  display: block;
+}
+
+.caption {
+  font-size: 0.9rem;
+  color: #777;
+  text-align: center;
+  margin-top: 0.8rem;
+  font-style: italic;
+}
+
+/* --- BOTTOM NAV --- */
+.case-study-footer {
+  margin-top: 5rem;
+  padding-top: 2rem;
+  border-top: 1px solid #eee;
+}
+
+.back-link {
+  font-weight: 700;
+  font-family: 'Mukta', sans-serif;
+  font-size: 1.1rem;
+}
+
+.cs-section h2 {
+    text-align: center;
+}
+
+.case-study-hero {
+    text-align: center;
+}

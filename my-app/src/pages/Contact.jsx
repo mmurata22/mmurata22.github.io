@@ -24,8 +24,8 @@ const Contact = () => {
             Prefer to shoot me an email directly? No problem.
           </p>
           
-          <a href="mailto:your.email@lehigh.edu" className="email-link">
-            your.email@lehigh.edu
+          <a href="mailto:michele.h.murata@gmail.com" className="email-link">
+            michele.h.murata@gmail.com
           </a>
 
           <div className="social-section">
@@ -35,25 +35,46 @@ const Contact = () => {
         </div>
 
         {/* Right Column: The Form */}
-        {/* Note: Connect this to Formspree.io later to make it actually send emails! */}
-        <form className="contact-form">
-          <div className="form-group">
-            <label htmlFor="name">Name</label>
-            <input type="text" id="name" placeholder="What's your name?" />
-          </div>
+        <form 
+        className="contact-form" 
+        action="https://formspree.io/f/movgoawa" 
+        method="POST"
+      >
+        <div className="form-group">
+          <label htmlFor="name">Name</label>
+          <input 
+            type="text" 
+            id="name" 
+            name="name" 
+            placeholder="What's your name?" 
+            required 
+          />
+        </div>
 
-          <div className="form-group">
-            <label htmlFor="email">Email</label>
-            <input type="email" id="email" placeholder="Where can I reach you?" />
-          </div>
+        <div className="form-group">
+          <label htmlFor="email">Email</label>
+          <input 
+            type="email" 
+            id="email" 
+            name="email" 
+            placeholder="Where can I reach you?" 
+            required 
+          />
+        </div>
 
-          <div className="form-group">
-            <label htmlFor="message">Message</label>
-            <textarea id="message" rows="5" placeholder="How can I help you?"></textarea>
-          </div>
+        <div className="form-group">
+          <label htmlFor="message">Message</label>
+          <textarea 
+            id="message" 
+            name="message" 
+            rows="5" 
+            placeholder="How can I help you?" 
+            required
+          ></textarea>
+        </div>
 
-          <button type="submit" className="submit-btn">Send Message</button>
-        </form>
+        <button type="submit" className="submit-btn">Send Message</button>
+      </form>
 
       </div>
     </div>

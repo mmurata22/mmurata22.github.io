@@ -2,6 +2,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import seraLogo from '../assets/SERA LOGO.png'; 
+import uniSourceAdmin from '../assets/uniSource Admin Dashboard.png';
+import ourionFrontPage from '../assets/Ourion Front Page.png'
+import SSILabSim from '../assets/SSILabSim.PNG';
+import FukushimaExample from '../assets/Gaussian Fourier.png';
+import NHIOutreach from '../assets/NHIOutreach.jpg'
+import RIVRTeamMeeting from '../assets/RIVRTeamMeeting.jpg';
 
 const Work = () => {
   
@@ -34,16 +40,16 @@ const Work = () => {
     <div className="container page-content">
       <div className="section">
         <h1 className="page-title" style={{ marginBottom: '1rem' }}>Selected Work</h1>
-        <p className="lead-text" style={{ maxWidth: '600px', marginBottom: '3rem' }}>
+        <p>
           A collection of software engineering, academic research, and VR design projects, with some examples of 
           progress and development, case studies, and live work.
         </p>
 
-        {/* --- 1. INDUSTRY EXPERIENCE --- */}
+        {/* 1. INDUSTRY EXPERIENCE */}
         <h2 style={categoryHeaderStyle}>Industry Experience</h2>
         <div className="work-list">
           
-          <Link to="/projects/sera" className="wide-card">
+          <Link to="/work/sera" className="wide-card">
             <div className="wide-card-image">
               <img 
                 src={seraLogo} 
@@ -63,20 +69,28 @@ const Work = () => {
                 Full-stack development for a B2B SaaS platform. Optimized backend queries 
                 and built responsive React front-end components for client management.
               </p>
-              <span className="read-more">View Case Study →</span>
             </div>
           </Link>
 
         </div>
 
-        {/* --- 2. ENGINEERING PROJECTS --- */}
+        {/* 2. ENGINEERING PROJECTS */}
         <h2 style={categoryHeaderStyle}>Software & Engineering</h2>
         <div className="work-list">
 
           {/* UniSource */}
-          <Link to="/projects/unisource" className="wide-card">
+          <Link to="/work/unisource" className="wide-card">
             <div className="wide-card-image">
-               <div style={placeholderStyle}>[Image: uniSource Interface]</div>
+              <img 
+                src={uniSourceAdmin} 
+                alt="uniSource's Admin Dashboard" 
+                style={{ 
+                  width: '100%', 
+                  height: '100%', 
+                  objectFit: 'contain', 
+                  padding: '20px' 
+                }} 
+              />
             </div>
             <div className="wide-card-content">
               <h3>uniSource</h3>
@@ -90,31 +104,48 @@ const Work = () => {
           </Link>
 
           {/* Ourion */}
-          <Link to="/projects/ourion" className="wide-card">
+          <Link to="/work/ourion" className="wide-card">
             <div className="wide-card-image">
-               <div style={placeholderStyle}>[Image: Ourion CV Demo]</div>
+              <img 
+                src={ourionFrontPage} 
+                alt="Ourion's Front Page" 
+                style={{ 
+                  width: '100%', 
+                  height: '100%', 
+                  objectFit: 'contain', 
+                  padding: '20px' 
+                }} 
+              />
             </div>
             <div className="wide-card-content">
-              <h3>Ourion (Recycle Vision)</h3>
+              <h3>Ourion</h3>
               <span className="role-tag">Computer Vision Startup</span>
               <p>
                 Real-time waste classification system. Uses OpenCV and deep learning models 
                 to identify recyclable materials instantly via camera feed.
               </p>
-              <span className="read-more">View Project →</span>
             </div>
           </Link>
 
         </div>
 
-        {/* --- 3. ACADEMIC RESEARCH --- */}
+        {/* 3. ACADEMIC RESEARCH */}
         <h2 style={categoryHeaderStyle}>Research & Labs</h2>
         <div className="work-list">
 
           {/* SSI */}
-          <Link to="/projects/ssi" className="wide-card">
+          <Link to="/work/ssi" className="wide-card">
             <div className="wide-card-image">
-               <div style={placeholderStyle}>[Image: SSI VR Sim]</div>
+              <img 
+                src={SSILabSim} 
+                alt="SSI's Dorm Room VR" 
+                style={{ 
+                  width: '100%', 
+                  height: '100%', 
+                  objectFit: 'contain', 
+                  padding: '20px' 
+                }} 
+              />
             </div>
             <div className="wide-card-content">
               <h3>Stereotyping Social Interactions</h3>
@@ -123,14 +154,22 @@ const Work = () => {
                 Designed a VR social psychology simulation. Focused on non-gamer onboarding 
                 UI and collecting gaze/interaction data for research analysis.
               </p>
-              <span className="read-more">View Case Study →</span>
             </div>
           </Link>
 
           {/* Fukushima */}
-          <Link to="/projects/fukushima" className="wide-card">
+          <Link to="/work/fukushima" className="wide-card">
             <div className="wide-card-image">
-               <div style={placeholderStyle}>[Image: Fukushima Lab Diagrams]</div>
+              <img 
+                src={FukushimaExample} 
+                alt="Gaussian Fourier" 
+                style={{ 
+                  width: '100%', 
+                  height: '100%', 
+                  objectFit: 'contain', 
+                  padding: '20px' 
+                }} 
+              />
             </div>
             <div className="wide-card-content">
               <h3>FUKUSHIMA Lab</h3>
@@ -139,14 +178,22 @@ const Work = () => {
                 Worked in Nagoya, Japan, reproducing novel "Gaussian Fourier Pyramid" 
                 algorithms to validate edge-preserving image filters.
               </p>
-              <span className="read-more">View Case Study →</span>
             </div>
           </Link>
 
           {/* NHI */}
-          <Link to="/projects/nhi" className="wide-card">
+          <Link to="/work/nhi" className="wide-card">
             <div className="wide-card-image">
-               <div style={placeholderStyle}>[Image: NHI HoloLens Scan]</div>
+              <img 
+                src={NHIOutreach} 
+                alt="Outreach at NHI" 
+                style={{ 
+                  width: '100%', 
+                  height: '100%', 
+                  objectFit: 'contain', 
+                  padding: '20px' 
+                }} 
+              />
             </div>
             <div className="wide-card-content">
               <h3>NanoHuman Interfaces</h3>
@@ -155,33 +202,41 @@ const Work = () => {
                 Developed AR/VR scanning workflows for the HoloLens, optimizing high-poly 
                 nano-scale models for real-time rendering.
               </p>
-              <span className="read-more">View Case Study →</span>
             </div>
           </Link>
 
           {/* RIVR */}
-           <Link to="/projects/rivr" className="wide-card">
+           <Link to="/work/rivr" className="wide-card">
             <div className="wide-card-image">
-               <div style={placeholderStyle}>[Image: RIVR Lab Event]</div>
+              <img 
+                src={RIVRTeamMeeting} 
+                alt="RIVR Team Meeting" 
+                style={{ 
+                  width: '100%', 
+                  height: '100%', 
+                  objectFit: 'contain', 
+                  padding: '20px' 
+                }} 
+              />
             </div>
             <div className="wide-card-content">
               <h3>RIVR Lab</h3>
-              <span className="role-tag">VR Outreach Lead</span>
+              <span className="role-tag">VR Developer</span>
               <p>
                 Created educational immersive experiences to introduce students to VR technology 
                 using Oculus headsets and Unity.
               </p>
-              <span className="read-more">View Case Study →</span>
             </div>
           </Link>
 
         </div>
 
-        {/* --- 4. DESIGN --- */}
+        {/*
+        {/* 4. DESIGN
         <h2 style={categoryHeaderStyle}>Design & Creative</h2>
         <div className="work-list">
           
-          <Link to="/projects/design" className="wide-card">
+          <Link to="/work/design" className="wide-card">
             <div className="wide-card-image">
                <div style={placeholderStyle}>[Image: 3D Art/Scans]</div>
             </div>
@@ -197,7 +252,7 @@ const Work = () => {
           </Link>
 
         </div>
-
+          */}
       </div>
     </div>
   );

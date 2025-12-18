@@ -191,7 +191,7 @@ h1 { font-size: 3rem; margin-bottom: 0.5rem; }
 
 .cta-button {
   display: inline-block;
-  background: #0d1536; /* Your site's blue accent */
+  background: #0d1536;
   color: white;
   padding: 0.8rem 2rem;
   border-radius: 6px;
@@ -220,11 +220,11 @@ h1 { font-size: 3rem; margin-bottom: 0.5rem; }
   z-index: 1;
 }
 
-/* --- FOOTER LAYOUT --- */
+/* FOOTER LAYOUT */
 .site-footer {
   position: relative;
-  margin-top: 8rem; /* Increased space for larger overlap */
-  background: #fff; /* Light background for the bottom part */
+  margin-top: 8rem;
+  background: #fff;
   border-top: 1px solid #eee;
 }
 
@@ -234,9 +234,8 @@ h1 { font-size: 3rem; margin-bottom: 0.5rem; }
   margin: 0 auto;
 }
 
-/* --- 1. THE ANIMATED CTA CARD --- */
+/* 1. THE ANIMATED CTA CARD */
 .footer-cta-container {
-  /* Pulls the card up to overlap the content above it */
   transform: translateY(-60px); 
   margin-bottom: -30px; 
   position: relative;
@@ -244,12 +243,10 @@ h1 { font-size: 3rem; margin-bottom: 0.5rem; }
 }
 
 .cta-card {
-  /* Define Cyan and Magenta colors. Using nicer hex codes than standard html colors. */
   --color-cyan: #00d2ff;
   --color-magenta: #92278f;
-  
   border-radius: 16px;
-  padding: 4rem 2rem; /* More padding for a grander feel */
+  padding: 4rem 2rem;
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -259,7 +256,6 @@ h1 { font-size: 3rem; margin-bottom: 0.5rem; }
 
 /* The Animated Gradient Background */
 .cta-card.animated-gradient-bg {
-  /* Using 3 stops makes the looping smoother */
   background: linear-gradient(-45deg, var(--color-cyan), var(--color-magenta), var(--color-cyan));
   background-size: 400% 400%;
   animation: gradientShift 12s ease infinite;
@@ -274,7 +270,7 @@ h1 { font-size: 3rem; margin-bottom: 0.5rem; }
 
 .cta-card h2 {
   font-family: 'Mukta', sans-serif;
-  font-size: 3rem; /* Larger headline */
+  font-size: 3rem;
   font-weight: 800;
   margin-bottom: 1rem;
   color: #ffffff;
@@ -294,9 +290,9 @@ h1 { font-size: 3rem; margin-bottom: 0.5rem; }
 .cta-button.white-button {
   display: inline-block;
   background: #ffffff;
-  color: var(--color-magenta); /* Text matches the background theme */
+  color: var(--color-magenta);
   padding: 1rem 2.5rem;
-  border-radius: 50px; /* Pill shape */
+  border-radius: 50px;
   font-family: 'Mukta', sans-serif;
   font-weight: 800;
   text-transform: uppercase;
@@ -313,9 +309,9 @@ h1 { font-size: 3rem; margin-bottom: 0.5rem; }
 }
 
 
-/* --- 2. FOOTER BOTTOM AREA --- */
+/* 2. FOOTER BOTTOM AREA */
 .footer-bottom {
-  padding-top: 5rem; /* Extra space accounting for the overlapping card */
+  padding-top: 5rem;
   padding-bottom: 2rem;
   color: #333;
 }
@@ -364,7 +360,7 @@ h1 { font-size: 3rem; margin-bottom: 0.5rem; }
 }
 
 .links-col nav a:hover {
-  color: #92278f; /* Magenta hover color */
+  color: #92278f;
   text-decoration: none;
 }
 
@@ -382,7 +378,7 @@ h1 { font-size: 3rem; margin-bottom: 0.5rem; }
   font-family: 'Hepta Slab', serif;
 }
 
-/* --- ANIMATIONS --- */
+/* ANIMATIONS */
 @keyframes gradientShift {
   0% {
     background-position: 0% 50%;
@@ -412,5 +408,101 @@ h1 { font-size: 3rem; margin-bottom: 0.5rem; }
   
   .links-col nav {
       align-items: center;
+  }
+}
+
+/* --- VISUAL PORTFOLIO GRID --- */
+.portfolio-grid {
+  display: grid;
+  /* Creates a responsive grid: 1 column on mobile, 2 on desktop */
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2.5rem;
+  padding: 0 1rem;
+}
+
+.portfolio-card {
+  text-decoration: none;
+  display: block;
+  position: relative; 
+  transition: transform 0.3s ease;
+}
+
+/* Image Container - Forces the rectangular shape */
+.portfolio-image-wrapper {
+  width: 100%;
+  aspect-ratio: 16 / 10; /* This creates the nice rectangle height */
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  
+  /* Centers the placeholder text */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.portfolio-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures image fills the box without stretching */
+  transition: transform 0.5s ease;
+}
+
+/* Placeholder Text Style */
+.portfolio-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666; /* darker text for visibility */
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Text Info */
+.portfolio-info {
+  padding-left: 0.5rem;
+}
+
+.portfolio-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #222;
+  margin: 0 0 0.4rem 0;
+  transition: color 0.2s ease;
+}
+
+.portfolio-category {
+  font-size: 0.9rem;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-family: 'Mukta', sans-serif;
+  margin: 0;
+}
+
+/* --- HOVER EFFECTS --- */
+.portfolio-card:hover .portfolio-image-wrapper {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.portfolio-card:hover .portfolio-image {
+  transform: scale(1.05);
+}
+
+.portfolio-card:hover .portfolio-title {
+  color: #0c56d5; /* Your blue accent color */
+}
+
+/* Mobile Adjustment */
+@media (max-width: 768px) {
+  .portfolio-grid {
+    grid-template-columns: 1fr;
   }
 }

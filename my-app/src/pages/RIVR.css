@@ -1,0 +1,129 @@
+/* --- RIVR SPECIFIC STYLES --- */
+
+/* 1. The Launchpad Grid (3 Columns) */
+.launchpad-grid {
+  display: grid;
+  /* Ensures columns represent at least 300px, but stretch to fill space */
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+/* 2. The Individual Project Card */
+.launch-card {
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  overflow: hidden; /* Keeps image corners rounded */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  
+  /* Flexbox ensures the footer buttons always align at the bottom */
+  display: flex;
+  flex-direction: column;
+  height: 100%; 
+}
+
+.launch-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.12);
+  border-color: #d0d0d0;
+}
+
+/* 3. The Card Image Area */
+.launch-card-image {
+  height: 180px;
+  width: 100%;
+  background: #f8f9fa;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.launch-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures screenshots fill the box perfectly */
+  transition: transform 0.3s ease;
+}
+
+.launch-card:hover .launch-card-image img {
+  transform: scale(1.03); /* Subtle zoom effect on hover */
+}
+
+/* 4. The Content Area */
+.launch-card-content {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; /* This pushes the button down to the bottom */
+}
+
+.launch-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-family: 'Mukta', sans-serif;
+  color: #222;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.launch-card p {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.launch-card strong {
+  color: #333;
+  font-weight: 700;
+}
+
+/* 5. The Buttons */
+.launch-btn {
+  display: inline-block;
+  width: fit-content;
+  padding: 0.7rem 1.2rem;
+  border-radius: 6px;
+  font-weight: 700;
+  text-decoration: none !important;
+  font-size: 0.9rem;
+  margin-top: auto; /* Anchors button to bottom */
+  text-align: center;
+  transition: all 0.2s ease;
+}
+
+/* "Play Project" Button (Blue) */
+.launch-btn.play {
+  background: #3a60ff;
+  color: white;
+  border: 1px solid #3a60ff;
+}
+
+.launch-btn.play:hover {
+  background: #284de0;
+  box-shadow: 0 4px 12px rgba(58, 96, 255, 0.3);
+}
+
+/* "Visit Website" Button (Black) */
+.launch-btn.visit {
+  background: #222;
+  color: white;
+  border: 1px solid #222;
+}
+
+.launch-btn.visit:hover {
+  background: #000;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* --- Responsive Tweak --- */
+@media (max-width: 768px) {
+  .launchpad-grid {
+    grid-template-columns: 1fr; /* Stack cards vertically on phone */
+  }
+}

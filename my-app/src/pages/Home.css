@@ -1,0 +1,264 @@
+/* --- HERO SECTION --- */
+.home-container {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.home-hero {
+  margin-bottom: 5rem;
+  max-width: 800px;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  line-height: 1.1;
+  color: #222;
+  margin-bottom: 1.5rem;
+  letter-spacing: -1px;
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: #666;
+  max-width: 600px;
+  font-weight: 400;
+}
+
+.highlight {
+  color: #333; /* Or use an accent color like blue/purple */
+  text-decoration: underline;
+  text-decoration-color: #ddd;
+  text-decoration-thickness: 4px;
+}
+
+/* --- WORK GRID --- */
+.work-grid {
+  display: grid;
+  /* Creates a responsive grid: 1 column on mobile, 2 on desktop */
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 3rem;
+  row-gap: 4rem;
+}
+
+/* --- PROJECT CARD --- */
+.project-card {
+  text-decoration: none;
+  display: block;
+  group: pointer; /* Helper for hover states */
+}
+
+/* The Image Container */
+.card-image-wrapper {
+  width: 100%;
+  aspect-ratio: 16 / 10; /* Enforces a nice rectangular shape */
+  border-radius: 12px;
+  overflow: hidden; /* Crops the image if it zooms */
+  margin-bottom: 1.2rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures image fills the box without stretching */
+  transition: transform 0.5s ease;
+}
+
+/* Placeholder style if you don't have an image yet */
+.placeholder-thumb {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #888;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+/* --- CARD TEXT --- */
+.card-info {
+  padding-left: 0.5rem;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #222;
+  margin: 0 0 0.4rem 0;
+  transition: color 0.2s ease;
+}
+
+.card-category {
+  font-size: 0.95rem;
+  color: #777;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-family: 'Mukta', sans-serif;
+  margin: 0;
+}
+
+/* --- HOVER EFFECTS --- */
+/* When hovering the whole card... */
+.project-card:hover .card-image-wrapper {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+/* Zoom the image slightly */
+.project-card:hover .card-image {
+  transform: scale(1.05);
+}
+
+/* Darken the title slightly */
+.project-card:hover .card-title {
+  color: #000;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-decoration-color: #eee;
+}
+
+/* --- FOOTER --- */
+.home-footer {
+  margin-top: 6rem;
+  padding-top: 3rem;
+  border-top: 1px solid #eee;
+}
+
+.home-footer p {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.email-link {
+  font-size: 1.1rem;
+  color: #666;
+  text-decoration: none;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 2px;
+  transition: all 0.2s ease;
+}
+
+.email-link:hover {
+  color: #000;
+  border-bottom-color: #000;
+}
+
+/* --- MOBILE TWEAK --- */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+  
+  .work-grid {
+    grid-template-columns: 1fr; /* Force single column on phones */
+  }
+  
+  .card-image-wrapper {
+    aspect-ratio: 16 / 9;
+  }
+}
+
+/* --- VISUAL PORTFOLIO GRID --- */
+
+.portfolio-grid {
+  display: grid;
+  /* 1 col on mobile, 2 cols on desktop */
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2.5rem;
+  padding: 0 1rem;
+}
+
+.portfolio-card {
+  text-decoration: none;
+  display: block;
+  /* Required for hover effects on children */
+  position: relative; 
+}
+
+/* Image Container */
+.portfolio-image-wrapper {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.portfolio-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+/* Placeholder for when you don't have an image */
+.portfolio-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #888;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Text Info */
+.portfolio-info {
+  padding-left: 0.5rem;
+}
+
+.portfolio-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #222;
+  margin: 0 0 0.4rem 0;
+  transition: color 0.2s ease;
+}
+
+.portfolio-category {
+  font-size: 0.9rem;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-family: 'Mukta', sans-serif;
+  margin: 0;
+}
+
+/* --- HOVER EFFECTS --- */
+.portfolio-card:hover .portfolio-image-wrapper {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.portfolio-card:hover .portfolio-image {
+  transform: scale(1.05);
+}
+
+.portfolio-card:hover .portfolio-title {
+  color: #0c56d5; /* Match your brand blue */
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-decoration-color: #eee;
+}
+
+/* Mobile Adjustment */
+@media (max-width: 768px) {
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
