@@ -1,13 +1,26 @@
 // src/pages/Work.jsx
 import React from 'react';
 import { Link } from 'react-router-dom';
+
+// --- MAIN PROJECT ASSETS ---
 import seraLogo from '../assets/SERA LOGO.png'; 
 import uniSourceAdmin from '../assets/uniSource Admin Dashboard.png';
-import ourionFrontPage from '../assets/Ourion Front Page.png'
+import ourionFrontPage from '../assets/Ourion Front Page.png';
 import SSILabSim from '../assets/SSILabSim.PNG';
 import FukushimaExample from '../assets/Gaussian Fourier.png';
-import NHIOutreach from '../assets/NHIOutreach.jpg'
+import NHIOutreach from '../assets/NHIOutreach.jpg';
 import RIVRTeamMeeting from '../assets/RIVRTeamMeeting.jpg';
+import TwoPictos from '../assets/two_pictos.png';
+import TypeSpecimenBug from '../assets/DeGuzmanMurata_type-specimen.png';
+import Chocolate from '../assets/DeGuzmanMurata_Product_Label_Design.png';
+import VerifySources from '../assets/Poster.png';
+import KabelSpecimen from '../assets/Kabel_Specimen.png';
+
+// --- GALLERY ASSETS ---
+// Import your gallery images here
+// import sketch1 from '../assets/sketch1.jpg';
+// import bookbinding1 from '../assets/bookbinding1.jpg';
+// import uiDesign1 from '../assets/uiDesign1.png';
 
 const Work = () => {
   
@@ -35,6 +48,68 @@ const Work = () => {
     fontSize: '0.9rem',
     minHeight: '200px'
   };
+
+  // 3. GALLERY STYLES
+  const galleryGridStyle = {
+    display: 'grid',
+    gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))',
+    gap: '20px',
+    marginTop: '1rem'
+  };
+
+  const galleryCardStyle = {
+    display: 'flex',
+    flexDirection: 'column',
+    background: '#fff',
+    borderRadius: '8px',
+    overflow: 'hidden',
+    border: '1px solid #eaeaea',
+    boxShadow: '0 2px 8px rgba(0,0,0,0.04)'
+  };
+
+  const galleryImgStyle = {
+    width: '100%',
+    height: '220px',
+    objectFit: 'cover' // 'cover' ensures the image fills the box nicely without stretching
+  };
+
+  const galleryCaptionStyle = {
+    padding: '12px 15px',
+    fontSize: '0.9rem',
+    color: '#666',
+    margin: 0,
+    backgroundColor: '#fafafa',
+    borderTop: '1px solid #eaeaea',
+    textAlign: 'center',
+    fontStyle: 'italic'
+  };
+
+  const galleryData = [
+    {
+      id: 'Garamond-Type-Specimen',
+      title: 'Adobe Garamond Type Specimen',
+      caption: 'Type specimen poster inspired by entomology.',
+      img: TypeSpecimenBug
+    },
+    {
+      id: 'Chocolate-Product-Design',
+      title: 'Chcolate Product Design',
+      caption: 'Premium chocolate featuring a garden window with unique flora.',
+      img: Chocolate
+    },
+    {
+      id: 'Verify-Sources-Poster',
+      title: 'Source Verification Poster',
+      caption: 'Poster promoting the identification of reliable sources.',
+      img: VerifySources
+    },
+    {
+      id: 'Kabel-Specimen',
+      title: 'Kabel Type Specimen',
+      caption: 'Typographic research and layouts focused on Rudolf Koch’s typefaces.',
+      img: KabelSpecimen
+    }
+  ];
 
   return (
     <div className="container page-content">
@@ -231,28 +306,59 @@ const Work = () => {
 
         </div>
 
-        {/*
-        {/* 4. DESIGN
+        {/* 4. DESIGN & CREATIVE */}
         <h2 style={categoryHeaderStyle}>Design & Creative</h2>
         <div className="work-list">
           
-          <Link to="/work/design" className="wide-card">
+          <Link to="/work/sports-icons" className="wide-card">
             <div className="wide-card-image">
-               <div style={placeholderStyle}>[Image: 3D Art/Scans]</div>
+              <img 
+                src={TwoPictos} 
+                alt="Two Iconography Examples of Sports" 
+                style={{ 
+                  width: '100%', 
+                  height: '100%', 
+                  objectFit: 'contain', 
+                  padding: '20px' 
+                }} 
+              />
             </div>
             <div className="wide-card-content">
-              <h3>3D Modeling & Digital Art</h3>
-              <span className="role-tag">Blender / Photogrammetry</span>
+              <h3>Sports Iconography Set</h3>
+              <span className="role-tag">Adobe Illustrator</span>
               <p>
-                A gallery of 3D assets, photogrammetry scans (The Bronze Arc), 
-                and UI/UX design explorations.
+                A process on creating sports-based iconography, inspired by the Olympics.
               </p>
-              <span className="read-more">View Gallery →</span>
+              <span className="read-more">View Process →</span>
             </div>
           </Link>
 
         </div>
-          */}
+
+        {/* 5. VISUAL GALLERY */}
+        <h2 style={categoryHeaderStyle}>Additional Design Work</h2>
+        <div style={galleryGridStyle}>
+          
+          {/* Automatically generate a card for every item in your array */}
+          {galleryData.map((item) => (
+            <Link 
+              key={item.id}
+              to={`/work/gallery/${item.id}`} 
+              state={{ galleryItem: item }} // This passes the data to the new page!
+              style={{ textDecoration: 'none' }}
+            >
+              <div style={galleryCardStyle}>
+                {item.img ? (
+                   <img src={item.img} alt={item.title} style={galleryImgStyle} />
+                ) : (
+                   <div style={placeholderStyle}>[Image: {item.title}]</div>
+                )}
+                <p style={galleryCaptionStyle}>{item.title}</p>
+              </div>
+            </Link>
+          ))}
+
+        </div>
       </div>
     </div>
   );

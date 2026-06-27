@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import './SSI.css'; 
 import './Sera.css'
 
-// --- REPLACE THESE WITH YOUR ACTUAL SERA ASSETS ---
 import dashboardImg from '../assets/seradashboard.png';
 import influencerDashboardImg from '../assets/serainfluencerdashboard.png';
 import startupCrew from '../assets/hero-startup-academy2025.jpg';
