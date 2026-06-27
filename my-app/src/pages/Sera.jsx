@@ -5,7 +5,8 @@ import './Sera.css'
 
 // --- REPLACE THESE WITH YOUR ACTUAL SERA ASSETS ---
 import dashboardImg from '../assets/seradashboard.png';
-import influencerDashboardImg from '../assets/serainfluencerdashboard.png'
+import influencerDashboardImg from '../assets/serainfluencerdashboard.png';
+import startupCrew from '../assets/hero-startup-academy2025.jpg';
 // import mobileOnboarding from '../assets/Sera_Mobile.png';
 // import analyticsChart from '../assets/Sera_Charts.png';
 
@@ -174,6 +175,12 @@ const Sera = () => {
           <p>
             The session was attended by 100+ stakeholders, including university alumni, aspiring students, startup founders, and industry leaders. 
             Effectively communicating technical concepts to this diverse audience validated not just my engineering work, but my ability to bridge the gap between code and business value.
+          </p>
+
+          <div className="image-full h-300">
+            <img src={startupCrew}></img>
+          </div>
+          <p className="caption">My friends from Startup Academy 2025 with President Helble of Lehigh University
           </p>
         </section>
 
