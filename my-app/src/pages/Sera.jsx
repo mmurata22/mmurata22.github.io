@@ -26,8 +26,10 @@ const Sera = () => {
         <span className="client-name">Sera / San Francisco (Hybrid)</span>
         <h1 className="page-title">Automating Debt Reduction</h1>
         <p className="lead-text">
-          A smart budgeting platform that analyzes financial history to automate debt payments. 
-          As a Full-Stack Intern, I architected key frontend features to visualize complex financial data for everyday users.
+          Sera is a smart budgeting platform that analyzes spending history to automate debt reduction for users drowning in fragmented financial data.
+        </p>
+        <p>
+          As a frontend developer intern, I worked on the UI layer. This included building onboarding flows, data visualization dashboards, and a landing page redesign using React, TypeScript, and Tailwind CSS. I integrated Recharts for interactive financial charts and Sonner for real-time notifications, and resolved UX bugs that had been blocking core user flows.
         </p>
       </header>
 
@@ -44,6 +46,10 @@ const Sera = () => {
         <div className="spec-item">
           <h4>Timeline</h4>
           <p>May 2025 - Aug 2025</p>
+        </div>
+        <div className="spec-item">
+          <h4>Company Size</h4>
+          <p>9 Employees</p>
         </div>
       </div>
 
@@ -99,7 +105,7 @@ const Sera = () => {
           <h2>Transition to Responsive Web</h2>
           <p>
             Sera targets a busy demographic often managing debt on the go. This required a strict mobile-first approach. 
-            I aided in transforming ~40% of Sera's webapp into a responcive webapp, utilizing Tailwind CSS.
+            I aided in transforming roughly half Sera's webapp into a responsive webapp, utilizing Tailwind CSS.
           </p>
         </section>
 
@@ -167,7 +173,7 @@ const Sera = () => {
 
         {/* --- 6. FINAL PRESENTATION (NEW) --- */}
         <section className="cs-section">
-          <h2>Conclusion: Final Presentation</h2>
+          <h2>Final Presentation</h2>
           <p>
             To conclude my internship, I delivered a comprehensive final presentation detailing my technical contributions and product strategy proposals.
           </p>
@@ -180,6 +186,17 @@ const Sera = () => {
             <img src={startupCrew}></img>
           </div>
           <p className="caption">My friends from Startup Academy 2025 with President Helble of Lehigh University
+          </p>
+        </section>
+
+        <section className="cs-section">
+          <h2>Key Takeaways</h2>
+          <p>
+            This internship was a pivotal experience in my career, reinforcing the importance of balancing technical execution with product thinking. 
+            I learned that shipping features is only part of the equation; understanding user behavior and business objectives is equally critical.
+          </p>
+          <p>
+            The experience also honed my skills in React, TypeScript, and Tailwind CSS, while providing exposure to real-world challenges in fintech product development.
           </p>
         </section>
 

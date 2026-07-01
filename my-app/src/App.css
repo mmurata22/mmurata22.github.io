@@ -95,6 +95,46 @@ footer {
   color: white;
 }
 
+.webgl-badge {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+.webgl-badge-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #00FFFF;
+  box-shadow: 0 0 6px 1px rgba(0, 255, 255, 0.8);
+  flex-shrink: 0;
+}
+
+@media (max-width: 480px) {
+  .webgl-badge {
+    bottom: 0.6rem;
+    right: 0.6rem;
+    padding: 0.3rem 0.55rem;
+    font-size: 0.65rem;
+  }
+}
+
 /* PROJECT CARDS */
 .project-card {
   display: block;

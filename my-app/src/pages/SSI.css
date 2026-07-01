@@ -99,6 +99,44 @@ video {
   font-style: italic;
 }
 
+/* --- CODE BLOCK (text/data equivalent of .image-full) --- */
+.code-block-full {
+  margin: 2rem 0;
+}
+
+.code-window {
+  background: #fafafa;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  overflow: hidden;
+}
+
+.code-window-title {
+  padding: 10px 1.5rem;
+  border-bottom: 1px solid #eee;
+  font-family: 'Mukta', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #888;
+}
+
+.code-window pre {
+  margin: 0;
+  padding: 1.25rem 1.5rem;
+  overflow-x: auto;
+}
+
+.code-window code {
+  font-family: 'Consolas', 'Menlo', 'Fira Code', monospace;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #444;
+  white-space: pre;
+}
+
 /* --- BOTTOM NAV --- */
 .case-study-footer {
   margin-top: 5rem;

@@ -37,6 +37,10 @@ const RIVR = () => {
           <h4>Status</h4>
           <p>Live & Public</p>
         </div>
+          <div className="spec-item">
+          <h4>Team Size</h4>
+          <p>38</p>
+        </div>
       </div>
 
       <div className="case-study-body">

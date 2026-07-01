@@ -18,6 +18,7 @@ import Ourion from './pages/Ourion';
 import Sera from './pages/Sera';
 import SportsIcons from './pages/SportsIcons';
 import GalleryView from './pages/GalleryView';
+import NotFound from "./pages/NotFound";
 
 import './App.css';
 
@@ -46,6 +47,8 @@ function App() {
 
         <Route path="/work/sports-icons" element={<SportsIcons />} />
         <Route path="/work/gallery/:id" element={<GalleryView />} />
+
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </>
   );

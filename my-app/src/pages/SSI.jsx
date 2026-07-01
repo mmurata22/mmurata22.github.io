@@ -8,6 +8,7 @@ import grayWhiteUIBlue from '../assets/GrayWhiteUI Blue.png';
 import greenUI from '../assets/GreenUI.png';
 import finalUI from '../assets/BlackWhiteTransparentUI.png';
 import clickSketch from '../assets/Click.png';
+import UIinVR from '../assets/SSI_UI.png';
 
 // Videos
 import animation1 from '../assets/Knock_UI.mov';
@@ -48,7 +49,11 @@ const SSI = () => {
         </div>
         <div className="spec-item">
           <h4>Context</h4>
-          <p>Undergraduate Research (Transitional)</p>
+          <p>Undergraduate Research</p>
+        </div>
+        <div className="spec-item">
+          <h4>Team Size</h4>
+          <p>30+</p>
         </div>
       </div>
 
@@ -146,6 +151,18 @@ const SSI = () => {
           <div className="image-full" style={{ maxWidth: '400px', margin: '2rem auto' }}>
              <img src={clickSketch} alt="Animation sketch for controller trigger" style={{ width: '100%', borderRadius: '8px', border: '1px solid #eee' }} />
              <p className="caption">Early sketch proposing the "Active State" animation for the trigger button.</p>
+          </div>
+        </section>
+
+        <section className="cs-section">  
+          <h2>Implemented in VR Dorm Room</h2>
+          <p>
+            These sets of UI animated instructions are designed to be usable across multiple instructional envvironments.
+          </p>
+
+          <div className="image-full">
+             <img src={UIinVR} alt="UI in VR Dorm Room" style={{ width: '100%', borderRadius: '8px' }} />
+             <p className="caption">Sample of UI implemented in an environment.</p>
           </div>
         </section>
 

@@ -44,6 +44,10 @@ const UniSource = () => {
           <h4>Timeline</h4>
           <p>Fall 2025 - December 2025</p>
         </div>
+        <div className="spec-item">
+          <h4>Team Size</h4>
+          <p>8 Developers</p>
+        </div>
       </div>
 
       {/* 3. THE PROBLEM */}
@@ -66,7 +70,7 @@ const UniSource = () => {
       <section className="cs-section">
         <h2>The Solution</h2>
         <p>
-            We built a responsive web dashboard that acts as a "Singe Source of Truth" for the department. 
+            We built a responsive web dashboard that acts as a "Single Source of Truth" for the department. 
             It allows admins to edit course data in real-time, while automatically checking for information conflicts, updated
             coursework and syllabi, and prerequisite errors.
         </p>

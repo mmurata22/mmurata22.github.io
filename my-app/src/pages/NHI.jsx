@@ -42,6 +42,10 @@ const NHI = () => {
           <h4>Timeline</h4>
           <p>Spring 2024 - Present</p>
         </div>
+          <div className="spec-item">
+          <h4>Team Size</h4>
+          <p>34</p>
+        </div>
       </div>
 
       <div className="case-study-body">

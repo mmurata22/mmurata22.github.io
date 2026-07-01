@@ -141,9 +141,10 @@ const Work = () => {
               <h3>Sera.io</h3>
               <span className="role-tag">Software Engineering Intern</span>
               <p>
-                Full-stack development for a B2B SaaS platform. Optimized backend queries 
-                and built responsive React front-end components for client management.
+                Frontend development for a B2B SaaS platform.
+                Built responsive React front-end components for client management.
               </p>
+              <span className="read-more">View Work →</span>
             </div>
           </Link>
 
@@ -199,6 +200,7 @@ const Work = () => {
                 Real-time waste classification system. Uses OpenCV and deep learning models 
                 to identify recyclable materials instantly via camera feed.
               </p>
+              <span className="read-more">View Project →</span>
             </div>
           </Link>
 
@@ -229,6 +231,7 @@ const Work = () => {
                 Designed a VR social psychology simulation. Focused on non-gamer onboarding 
                 UI and collecting gaze/interaction data for research analysis.
               </p>
+              <span className="read-more">View Case Study →</span>
             </div>
           </Link>
 
@@ -253,6 +256,7 @@ const Work = () => {
                 Worked in Nagoya, Japan, reproducing novel "Gaussian Fourier Pyramid" 
                 algorithms to validate edge-preserving image filters.
               </p>
+              <span className="read-more">View Case Study →</span>
             </div>
           </Link>
 
@@ -277,6 +281,7 @@ const Work = () => {
                 Developed AR/VR scanning workflows for the HoloLens, optimizing high-poly 
                 nano-scale models for real-time rendering.
               </p>
+              <span className="read-more">View Works →</span>
             </div>
           </Link>
 
@@ -301,6 +306,7 @@ const Work = () => {
                 Created educational immersive experiences to introduce students to VR technology 
                 using Oculus headsets and Unity.
               </p>
+              <span className="read-more">View Works →</span>
             </div>
           </Link>
 

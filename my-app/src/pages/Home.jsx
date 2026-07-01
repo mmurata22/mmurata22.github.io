@@ -123,7 +123,10 @@ const Home = () => {
         <canvas id="fluid-canvas" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', zIndex: 1, opacity: 0, transition: 'opacity 2.0s ease' }}></canvas>
         <div className="hero-content" style={{ position: 'relative', zIndex: 2, color: 'white', textAlign: 'center' }}>
           <h1>Hello, I'm Michele Murata!</h1>
-          <p>Building cool experiences, one code block at a time.</p>
+          <p>Fontend Devloper & VR Engineer: Designer who codes. Developer who designs.</p>
+        </div>
+        <div className="webgl-badge" aria-hidden="true">
+          <span>Header rendered with WebGL</span>
         </div>
       </header>
 
@@ -132,8 +135,8 @@ const Home = () => {
         <section style={{ maxWidth: '800px', margin: '0 auto 4rem auto', textAlign: 'center' }}>
            <h2 style={{ fontSize: '2.5rem', marginBottom: '1.5rem', fontFamily: 'Mukta, sans-serif' }}>About Me</h2>
            <p style={{ fontSize: '1.2rem', lineHeight: '1.8', color: '#555' }}>
-             I'm currently enrolled at Lehigh University majoring in Computer Science and minoring in Graphic Design. 
-             I have a passion for making immersive experiences and finding tangible uses for new tech and emerging tech.
+             I'm studying Computer Science at Lehigh, with a Graphic Design minor because I care as much about how things feel as 
+             how they work. Right now I'm obsessed with finding real uses for emerging tech.
            </p>
         </section>
 
@@ -243,8 +246,10 @@ const Home = () => {
                 <div className="project-card">
                   <h3 style={{ marginBottom: '0.2rem' }}>FUKUSHIMA Laboratory</h3>
                    <p style={{ color: '#666', fontStyle: 'italic', marginBottom: '1rem', marginTop: 0 }}>International Computer Graphics Researcher</p>
-                  <p>- Collaborated with international researchers to validate advanced computer graphics algorithms within a global academic environment.</p>
-                  <p>- Utilized MATLAB to verify the mathematical structures of Gaussian Fourier Pyramids and Local Laplacian Pyramids, providing critical validation for underlying graphics rendering techniques.</p>
+                  <p>- Translated existing C++ implementations of Gaussian Fourier Pyramids and Local Laplacian Pyramids into MATLAB, verifying that mathematical outputs were preserved accurately across both implementations.</p>
+                  <p>- Utilized MATLAB to validate the mathematical structures of Gaussian and Local Laplacian Pyramid algorithms, confirming correctness of underlying graphics rendering techniques.</p>
+                  <p>- Presented findings to multiple research labs, communicating complex multi-scale image processing concepts to diverse academic audiences in a cross-cultural, international environment.</p>
+                  <p>- Studied a range of multi-scale image processing methods (including Gaussian Pyramids, Laplacian Pyramids, Local Laplacian Filters, and Fast Local Laplacian Pyramids) as foundational context for the validation work.</p>
                 </div>
             </div>
           </div>
@@ -295,13 +300,13 @@ const Home = () => {
         <div className="container footer-cta-container">
           <div className="cta-card" style={{ background: '#0c56d5ff', boxShadow: '0 10px 30px rgba(0,0,0,0.15)' }}>
             <div className="cta-content">
-              <h2>Let's Build Something Together.</h2>
+              <h2>Get in Touch</h2>
               <p>
                 I'm currently looking for new opportunities in software engineering and VR. 
                 Have a project in mind or just want to say hi? My inbox is open.
               </p>
               <a href="mailto:your-email@example.com" className="cta-button">
-                Say Hello
+                Shoot an Email
               </a>
             </div>
           </div>
@@ -316,10 +321,10 @@ const Home = () => {
             <div className="footer-col links-col">
               <h4>Explore</h4>
               <nav>
-                <a href="/">Home</a>
-                <a href="/work">Work</a>
-                <a href="/about">About</a>
-                <a href="/contact">Contact</a>
+                <Link to="/">Home</Link>
+                <Link to="/work">Work</Link>
+                <Link to="/about">About</Link>
+                <Link to="/contact">Contact</Link>
               </nav>
             </div>
             <div className="footer-col social-col">
