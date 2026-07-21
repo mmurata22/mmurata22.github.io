@@ -2,7 +2,7 @@
 .case-study-hero {
   margin-bottom: 3rem;
   max-width: 100%;
-  text-align: center; /* NEW: Centers the Title, Subtitle, and Intro */
+  text-align: center; /* Centers the Title, Subtitle, and Intro */
 }
 
 .client-name {
@@ -58,17 +58,20 @@
   text-align: center;
 }
 
-.cs-section h2 {
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
-  color: #222;
-}
-
 .cs-section p {
   font-size: 1.1rem;
   line-height: 1.8;
   color: #444;
   margin-bottom: 1.5rem;
+}
+
+.cs-section code {
+  font-family: 'Consolas', 'Menlo', 'Fira Code', monospace;
+  font-size: 0.95em;
+  background: #f4f4f4;
+  padding: 0.15em 0.4em;
+  border-radius: 4px;
+  color: #b34700;
 }
 
 /* --- IMAGE & VIDEO GRIDS (The Responsive Fix) --- */
@@ -82,7 +85,7 @@
   margin-top: 2rem;
 }
 
-.img-container img, 
+.img-container img,
 .image-full img,
 video {
   width: 100%;
@@ -135,6 +138,8 @@ video {
   line-height: 1.6;
   color: #444;
   white-space: pre;
+  background: none;
+  padding: 0;
 }
 
 /* --- BOTTOM NAV --- */
@@ -148,14 +153,6 @@ video {
   font-weight: 700;
   font-family: 'Mukta', sans-serif;
   font-size: 1.1rem;
-}
-
-.cs-section h2 {
-    text-align: center;
-}
-
-.case-study-hero {
-    text-align: center;
 }
 
 /* --- LIVE SITE / REPO LINKS --- */

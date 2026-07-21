@@ -15,6 +15,7 @@ import TypeSpecimenBug from '../assets/DeGuzmanMurata_type-specimen.png';
 import Chocolate from '../assets/DeGuzmanMurata_Product_Label_Design.png';
 import VerifySources from '../assets/Poster.png';
 import KabelSpecimen from '../assets/Kabel_Specimen.png';
+import BambuXrFrontPage from '../assets/BAMBUXRFrontPage.png';
 
 // --- GALLERY ASSETS ---
 // Import your gallery images here
@@ -199,6 +200,31 @@ const Work = () => {
               <p>
                 Real-time waste classification system. Uses OpenCV and deep learning models 
                 to identify recyclable materials instantly via camera feed.
+              </p>
+              <span className="read-more">View Project →</span>
+            </div>
+          </Link>
+
+          {/* Bambu X1C WebXR Training Shell */}
+          <Link to="/work/bambuxr" className="wide-card">
+            <div className="wide-card-image">
+              <img 
+                src={BambuXrFrontPage} 
+                alt="Bambu X1C WebXR Training Shell" 
+                style={{ 
+                  width: '100%', 
+                  height: '100%', 
+                  objectFit: 'contain', 
+                  padding: '20px' 
+                }} 
+              />
+            </div>
+            <div className="wide-card-content">
+              <h3>Bambu X1C WebXR Training Shell</h3>
+              <span className="role-tag">WebXR / React Three Fiber</span>
+              <p>
+                Browser-based VR training scene for the Bambu Lab X1C printer. Built with 
+                React Three Fiber and WebXR, with desktop and mobile fallback controls.
               </p>
               <span className="read-more">View Project →</span>
             </div>

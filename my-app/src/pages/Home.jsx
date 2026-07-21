@@ -123,7 +123,7 @@ const Home = () => {
         <canvas id="fluid-canvas" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', zIndex: 1, opacity: 0, transition: 'opacity 2.0s ease' }}></canvas>
         <div className="hero-content" style={{ position: 'relative', zIndex: 2, color: 'white', textAlign: 'center' }}>
           <h1>Hello, I'm Michele Murata!</h1>
-          <p>Fontend Devloper & VR Engineer: Designer who codes. Developer who designs.</p>
+          <p>Frontend Developer & VR Engineer: Focused onHuman Factors, Simulation, and UI/UX.</p>
         </div>
         <div className="webgl-badge" aria-hidden="true">
           <span>Header rendered with WebGL</span>

@@ -45,8 +45,9 @@ const NHIProject1 = () => {
       {/* PLATFORM NOTICE */}
       <div className="disclaimer-banner" style={{ background: '#fff3cd', color: '#856404', padding: '1rem', borderRadius: '8px', marginBottom: '3rem', border: '1px solid #ffeeba' }}>
         <p style={{ margin: 0, fontSize: '0.9rem' }}>
-          <strong>Platform Status:</strong> This project was originally deployed on <strong>Adobe Aero</strong>, which has since been discontinued. 
+          <strong>Platform Status:</strong> This project was originally deployed on <strong>Adobe Aero</strong>, which has since been discontinued.
           The video below documents the functional AR prototype. We are currently developing a replacement application to restore public access.
+          The 3D assets and source files are property of Lehigh's NHI Lab and Material Science Dept., and are not publicly available outside institutional members.
         </p>
       </div>
 

@@ -15,6 +15,7 @@ import RIVR from './pages/RIVR';
 import SSI from './pages/SSI';
 import UniSource from './pages/uniSource';
 import Ourion from './pages/Ourion';
+import BAMBUXR from './pages/BAMBUXR';
 import Sera from './pages/Sera';
 import SportsIcons from './pages/SportsIcons';
 import GalleryView from './pages/GalleryView';
@@ -44,6 +45,7 @@ function App() {
 
         <Route path="/work/unisource" element={<UniSource />} />
         <Route path="/work/ourion" element={<Ourion />} />
+        <Route path="/work/bambuxr" element={<BAMBUXR />} />
 
         <Route path="/work/sports-icons" element={<SportsIcons />} />
         <Route path="/work/gallery/:id" element={<GalleryView />} />

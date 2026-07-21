@@ -53,6 +53,18 @@ const Sera = () => {
         </div>
       </div>
 
+      {/* --- LIVE SITE LINK --- */}
+      <div className="link-section" style={{ textAlign: 'center', marginBottom: '4rem' }}>
+        <a
+          href="https://getsera.io"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="live-site-btn"
+        >
+          Visit Live Site ↗
+        </a>
+      </div>
+
       {/* --- 3. FULL SCOPE SECTION --- */}
       <div className="scope-section" style={{ marginBottom: '4rem', padding: '2rem', background: '#fff', border: '1px solid #eee', borderRadius: '12px', boxShadow: '0 4px 12px rgba(0,0,0,0.03)' }}>
         <h3 style={{ marginTop: 0, fontFamily: 'Mukta, sans-serif' }}>Full Scope of Responsibilities</h3>
@@ -70,18 +82,6 @@ const Sera = () => {
 
       <div className="case-study-body">
 
-        {/* --- 2.5 LIVE LINK SECTION (NEW) --- */}
-        <div className="link-section" style={{ textAlign: 'center', marginBottom: '4rem' }}>
-            <a 
-            href="https://getsera.io" // REPLACE WITH ACTUAL URL
-            target="_blank" 
-            rel="noopener noreferrer" 
-            className="live-site-btn"
-            >
-            Visit Live Site ↗
-            </a>
-        </div>
-        
         {/* --- 4. DATA VISUALIZATION --- */}
         <section className="cs-section">
           <h2>Visualizing Financial Health</h2>

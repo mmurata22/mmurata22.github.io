@@ -19,7 +19,15 @@ const UniSource = () => {
 
   return (
     <div className="container page-content">
-      
+
+      {/* --- ACCESS NOTE --- */}
+      <div className="disclaimer-banner" style={{ background: '#f8f9fa', padding: '1rem', borderRadius: '8px', marginBottom: '2rem', borderLeft: '4px solid #666' }}>
+        <p style={{ margin: 0, fontSize: '0.9rem', color: '#555' }}>
+          <strong>Note:</strong> uniSource is internal infrastructure built for Lehigh University's CS Department.
+          The source code and live deployment are not publicly available outside institutional (Lehigh University) members.
+        </p>
+      </div>
+
       {/* HERO HEADER */}
       <header className="case-study-hero">
         <span className="client-name">Lehigh University / CS Department</span>

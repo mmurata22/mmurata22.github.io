@@ -7,7 +7,15 @@ import labDiagram from '../assets/Gaussian Fourier.png';
 const Fukushima = () => {
   return (
     <div className="container page-content">
-      
+
+      {/* --- ACCESS NOTE --- */}
+      <div className="disclaimer-banner" style={{ background: '#f8f9fa', padding: '1rem', borderRadius: '8px', marginBottom: '2rem', borderLeft: '4px solid #666' }}>
+        <p style={{ margin: 0, fontSize: '0.9rem', color: '#555' }}>
+          <strong>Note:</strong> This research was conducted within the Fukushima Lab at the Nagoya Institute of Technology.
+          The MATLAB implementation and research data are lab property and are not publicly available outside institutional members.
+        </p>
+      </div>
+
       {/* 1. HEADER */}
       <header className="case-study-hero">
         <span className="client-name">Nagoya Institute of Technology / Fukushima Lab</span>

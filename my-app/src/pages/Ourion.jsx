@@ -57,21 +57,19 @@ const Ourion = () => {
 
       {/* --- 2.5 GITHUB LINKS --- */}
       <div className="link-section" style={{ textAlign: 'center', marginBottom: '4rem' }}>
-        <a 
-          href="https://github.com/mmurata22/ourion" 
-          target="_blank" 
-          rel="noopener noreferrer" 
+        <a
+          href="https://github.com/mmurata22/ourion"
+          target="_blank"
+          rel="noopener noreferrer"
           className="live-site-btn"
-          style={{ marginRight: '1rem' }}
         >
           Frontend Repo ↗
         </a>
-        <a 
-          href="https://ourion.app" 
-          target="_blank" 
-          rel="noopener noreferrer" 
+        <a
+          href="https://ourion.app"
+          target="_blank"
+          rel="noopener noreferrer"
           className="live-site-btn"
-          style={{  }}
         >
           Live Site ↗
         </a>
