@@ -90,10 +90,8 @@ export function initGradient() {
         const ctx = textureCanvas.getContext("2d");
         const grad = ctx.createLinearGradient(0, 0, width, 0);
 
-        grad.addColorStop(0.00, "#00FFFF");
-        grad.addColorStop(0.35, "#3a60ff");
-        grad.addColorStop(0.70, "#9d00ff");
-        grad.addColorStop(1.00, "#FF00FF");
+        grad.addColorStop(0.00, "#7C9ED9");
+        grad.addColorStop(1.00, "#E3F988");
 
         ctx.fillStyle = grad;
         ctx.fillRect(0, 0, width, height);

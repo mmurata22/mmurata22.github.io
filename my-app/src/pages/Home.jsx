@@ -109,7 +109,7 @@ const Home = () => {
       <header 
         className="hero-header"
         style={{ 
-          background: 'linear-gradient(135deg, #00FFFF 0%, #3a60ff 50%, #FF00FF 100%)',
+          background: 'linear-gradient(135deg, #7C9ED9 0%, #E3F988 100%)',
           position: 'relative',
           width: '100%',
           minHeight: '60vh',
@@ -298,11 +298,11 @@ const Home = () => {
 
         {/* Call-To-Action & Footer */}
         <div className="container footer-cta-container">
-          <div className="cta-card" style={{ background: '#0c56d5ff', boxShadow: '0 10px 30px rgba(0,0,0,0.15)' }}>
+          <div className="cta-card" style={{ background: '#7C9ED9', boxShadow: '0 10px 30px rgba(0,0,0,0.15)' }}>
             <div className="cta-content">
               <h2>Get in Touch</h2>
               <p>
-                I'm currently looking for new opportunities in software engineering and VR. 
+                I'm currently looking for new opportunities in software engineering and VR.
                 Have a project in mind or just want to say hi? My inbox is open.
               </p>
               <a href="mailto:your-email@example.com" className="cta-button">

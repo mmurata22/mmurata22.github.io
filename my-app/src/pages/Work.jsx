@@ -130,12 +130,6 @@ const Work = () => {
               <img 
                 src={seraLogo} 
                 alt="Sera.io Logo" 
-                style={{ 
-                  width: '100%', 
-                  height: '100%', 
-                  objectFit: 'contain', 
-                  padding: '20px' 
-                }} 
               />
             </div>
             <div className="wide-card-content">
@@ -161,12 +155,6 @@ const Work = () => {
               <img 
                 src={uniSourceAdmin} 
                 alt="uniSource's Admin Dashboard" 
-                style={{ 
-                  width: '100%', 
-                  height: '100%', 
-                  objectFit: 'contain', 
-                  padding: '20px' 
-                }} 
               />
             </div>
             <div className="wide-card-content">
@@ -186,12 +174,6 @@ const Work = () => {
               <img 
                 src={ourionFrontPage} 
                 alt="Ourion's Front Page" 
-                style={{ 
-                  width: '100%', 
-                  height: '100%', 
-                  objectFit: 'contain', 
-                  padding: '20px' 
-                }} 
               />
             </div>
             <div className="wide-card-content">
@@ -211,12 +193,6 @@ const Work = () => {
               <img 
                 src={BambuXrFrontPage} 
                 alt="Bambu X1C WebXR Training Shell" 
-                style={{ 
-                  width: '100%', 
-                  height: '100%', 
-                  objectFit: 'contain', 
-                  padding: '20px' 
-                }} 
               />
             </div>
             <div className="wide-card-content">
@@ -242,12 +218,6 @@ const Work = () => {
               <img 
                 src={SSILabSim} 
                 alt="SSI's Dorm Room VR" 
-                style={{ 
-                  width: '100%', 
-                  height: '100%', 
-                  objectFit: 'contain', 
-                  padding: '20px' 
-                }} 
               />
             </div>
             <div className="wide-card-content">
@@ -267,12 +237,6 @@ const Work = () => {
               <img 
                 src={FukushimaExample} 
                 alt="Gaussian Fourier" 
-                style={{ 
-                  width: '100%', 
-                  height: '100%', 
-                  objectFit: 'contain', 
-                  padding: '20px' 
-                }} 
               />
             </div>
             <div className="wide-card-content">
@@ -292,12 +256,6 @@ const Work = () => {
               <img 
                 src={NHIOutreach} 
                 alt="Outreach at NHI" 
-                style={{ 
-                  width: '100%', 
-                  height: '100%', 
-                  objectFit: 'contain', 
-                  padding: '20px' 
-                }} 
               />
             </div>
             <div className="wide-card-content">
@@ -317,12 +275,6 @@ const Work = () => {
               <img 
                 src={RIVRTeamMeeting} 
                 alt="RIVR Team Meeting" 
-                style={{ 
-                  width: '100%', 
-                  height: '100%', 
-                  objectFit: 'contain', 
-                  padding: '20px' 
-                }} 
               />
             </div>
             <div className="wide-card-content">
@@ -347,12 +299,6 @@ const Work = () => {
               <img 
                 src={TwoPictos} 
                 alt="Two Iconography Examples of Sports" 
-                style={{ 
-                  width: '100%', 
-                  height: '100%', 
-                  objectFit: 'contain', 
-                  padding: '20px' 
-                }} 
               />
             </div>
             <div className="wide-card-content">

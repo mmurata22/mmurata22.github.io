@@ -62,7 +62,7 @@ footer {
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  background: linear-gradient(135deg, #00FFFF 0%, #3a60ff 50%, #FF00FF 100%);
+  background: linear-gradient(135deg, #7C9ED9 0%, #E3F988 100%);
 }
 
 #fluid-canvas {
@@ -121,8 +121,8 @@ footer {
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background: #00FFFF;
-  box-shadow: 0 0 6px 1px rgba(0, 255, 255, 0.8);
+  background: #7C9ED9;
+  box-shadow: 0 0 6px 1px rgba(124, 158, 217, 0.8);
   flex-shrink: 0;
 }
 
@@ -327,20 +327,19 @@ video {
 }
 
 .wide-card-image {
-  flex: 0 0 45%; 
+  flex: 0 0 45%;
   position: relative;
   background: #f4f4f4;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 2rem;
-  box-sizing: border-box;
+  overflow: hidden;
 }
 
 .wide-card-image img {
   width: 100%;
   height: 100%;
-  object-fit: contain; 
+  object-fit: cover;
   display: block;
 }
 
